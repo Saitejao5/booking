@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Booking Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Hotel Bliss</h1>
+            </div>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navMenu" class="hide">
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li>
+                    <a href="#" id="roomsLink">Rooms & Suites <i class="fas fa-chevron-down"></i></a>
+                    <ul id="roomsSubMenu" class="sub-menu hide">
+                        <li><a href="#" class="roomOption" data-page="standardRoom">Standard Room</a></li>
+                        <li><a href="#" class="roomOption" data-page="deluxeSuite">Deluxe Suite</a></li>
+                        <li><a href="#" class="roomOption" data-page="familyRoom">Family Room</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="amenitiesLink">Amenities</a></li>
+                <li><a href="#" id="offersLink">Offers</a></li>
+                <li><a href="#" id="contactLink">Contact Us</a></li>
+                <li><a href="#" id="aboutLink">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Page -->
+        <section id="homePage">
+            <div class="hero">
+                <h2>Welcome to Hotel Bliss</h2>
+                <p>Your luxury escape awaits.</p>
+            </div>
+            <!-- Booking Engine -->
+            <div class="booking-engine">
+                <h3>Book Your Stay</h3>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="checkIn">Check-In Date:</label>
+                        <input type="date" id="checkIn" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOut">Check-Out Date:</label>
+                        <input type="date" id="checkOut" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests:</label>
+                        <input type="number" id="guests" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType">Room Type:</label>
+                        <select id="roomType" required>
+                            <option value="standard">Standard Room</option>
+                            <option value="deluxe">Deluxe Suite</option>
+                            <option value="family">Family Room</option>
+                        </select>
+                    </div>
+                    <button type="submit">Check Availability</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Rooms & Suites Pages -->
+        <section id="roomsPage" class="hidden">
+            <div class="rooms-container">
+                <!-- Room Sections (Repeating 7 times as per your request) -->
+                <!-- Standard Room -->
+                <div class="room">
+                    <a href="#" class="headline" data-page="standardRoomPage"><h2>Standard Room</h2></a>
+                    <p>Comfort and affordability in our cozy standard rooms.</p>
+                    <img src="images/standard-room.jpg" alt="Standard Room">
+                </div>
+                <!-- Deluxe Suite -->
+                <div class="room">
+                    <a href="#" class="headline" data-page="deluxeSuitePage"><h2>Deluxe Suite</h2></a>
+                    <p>Experience luxury in our spacious deluxe suites.</p>
+                    <img src="images/deluxe-suite.jpg" alt="Deluxe Suite">
+                </div>
+                <!-- Family Room -->
+                <div class="room">
+                    <a href="#" class="headline" data-page="familyRoomPage"><h2>Family Room</h2></a>
+                    <p>Perfect for families, with ample space for everyone.</p>
+                    <img src="images/family-room.jpg" alt="Family Room">
+                </div>
+                <!-- Additional room sections can be added similarly -->
+            </div>
+        </section>
+
+        <!-- Amenities Page -->
+        <section id="amenitiesPage" class="hidden">
+            <h2>Amenities</h2>
+            <!-- List of amenities -->
+            <div class="amenities-list">
+                <!-- Repeat as needed -->
+                <div class="amenity">
+                    <h3>Spa & Wellness</h3>
+                    <p>Relax and rejuvenate at our world-class spa.</p>
+                    <img src="images/spa.jpg" alt="Spa">
+                </div>
+                <!-- Add more amenities -->
+            </div>
+        </section>
+
+        <!-- Offers Page -->
+        <section id="offersPage" class="hidden">
+            <h2>Special Offers</h2>
+            <!-- List of offers -->
+            <div class="offers-list">
+                <!-- Repeat as needed -->
+                <div class="offer">
+                    <h3>Summer Getaway</h3>
+                    <p>Enjoy a 20% discount on stays during the summer months.</p>
+                    <img src="images/offer-summer.jpg" alt="Summer Offer">
+                </div>
+                <!-- Add more offers -->
+            </div>
+        </section>
+
+        <!-- Contact Us Page -->
+        <section id="contactPage" class="hidden">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Name:</label>
+                    <input type="text" id="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email:</label>
+                    <input type="email" id="contactEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message:</label>
+                    <textarea id="contactMessage" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="aboutPage" class="hidden">
+            <h2>About Us</h2>
+            <p>Discover the story behind Hotel Bliss and our commitment to exceptional hospitality.</p>
+            <!-- Content can be expanded -->
+        </section>
+
+        <!-- Dynamic Page -->
+        <section id="dynamicPage" class="hidden">
+            <h2>Developer not uploaded yet</h2>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Hotel Bliss. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
