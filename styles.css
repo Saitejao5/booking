@@ -1,0 +1,342 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url('images/hotel-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Navigation Menu */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    min-width: 200px;
+}
+
+.sub-menu li {
+    width: 100%;
+}
+
+.sub-menu a {
+    padding: 10px 20px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: #fff;
+    padding: 150px 20px 100px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    text-shadow: 2px 2px #000;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Booking Engine */
+.booking-engine {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    max-width: 800px;
+    margin: -50px auto 50px;
+    border-radius: 10px;
+}
+
+.booking-engine h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-engine form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-engine button {
+    padding: 15px 30px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto 0;
+    display: block;
+    cursor: pointer;
+}
+
+.booking-engine button:hover {
+    background: #555;
+}
+
+/* Rooms & Suites Page */
+.rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 20px 50px;
+}
+
+.room {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.room h2 {
+    margin-bottom: 10px;
+}
+
+.room p {
+    margin-bottom: 15px;
+}
+
+/* Amenities and Offers Pages */
+.amenities-list,
+.offers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 20px 50px;
+}
+
+.amenity,
+.offer {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.amenity img,
+.offer img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Contact Us Page */
+#contactPage {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 100px 20px 50px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#contactPage h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm .form-group {
+    margin-bottom: 15px;
+}
+
+#contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contactForm button {
+    padding: 12px 25px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background: #555;
+}
+
+/* About Us Page */
+#aboutPage {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 100px 20px 50px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Dynamic Page */
+#dynamicPage {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 100px 20px 50px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .booking-engine form {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 250px;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        transition: right 0.3s ease;
+    }
+
+    nav.show ul {
+        right: 0;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+
+    .sub-menu {
+        position: static;
+    }
+}
