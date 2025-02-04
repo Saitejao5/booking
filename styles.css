@@ -7,16 +7,21 @@
 
 /* Body and Background */
 body {
-    background-image: url('https://github.com/Saitejao5/booking/blob/main/first.jpg?raw=true'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the full screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url('images/hotel-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
-
 
 /* Navigation Menu */
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
     top: 0;
@@ -87,6 +92,14 @@ nav a:hover {
     padding: 150px 20px 100px;
 }
 
+.hero-content {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 12px;
+    display: inline-block;
+}
+
 .hero h2 {
     font-size: 48px;
     text-shadow: 2px 2px #000;
@@ -99,11 +112,15 @@ nav a:hover {
 
 /* Booking Engine */
 .booking-engine {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: fit-content;
     max-width: 800px;
     margin: -50px auto 50px;
-    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .booking-engine h3 {
@@ -132,7 +149,8 @@ nav a:hover {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .booking-engine button {
@@ -155,16 +173,19 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
     margin: 100px 20px 50px;
 }
 
 .room {
-    background: rgba(255, 255, 255, 0.9);
-    margin: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
     max-width: 300px;
     text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .room img {
@@ -187,17 +208,20 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
     margin: 100px 20px 50px;
 }
 
 .amenity,
 .offer {
-    background: rgba(255, 255, 255, 0.9);
-    margin: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
     max-width: 300px;
     text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .amenity img,
@@ -209,10 +233,15 @@ nav a:hover {
 
 /* Contact Us Page */
 #contactPage {
-    background: rgba(255, 255, 255, 0.9);
-    margin: 100px 20px 50px;
-    padding: 30px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: fit-content;
+    max-width: 600px;
+    margin: 100px auto 50px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 #contactPage h2 {
@@ -233,7 +262,8 @@ nav a:hover {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 #contactForm button {
@@ -251,20 +281,30 @@ nav a:hover {
 
 /* About Us Page */
 #aboutPage {
-    background: rgba(255, 255, 255, 0.9);
-    margin: 100px 20px 50px;
-    padding: 30px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: fit-content;
+    max-width: 800px;
+    margin: 100px auto 50px;
+    padding: 2rem;
     text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* Dynamic Page */
 #dynamicPage {
-    background: rgba(255, 255, 255, 0.9);
-    margin: 100px 20px 50px;
-    padding: 50px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: fit-content;
+    max-width: 800px;
+    margin: 100px auto 50px;
+    padding: 2rem;
     text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
